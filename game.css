@@ -35,6 +35,7 @@ body
 	margin-bottom: 0px;
 	margin-top: 10px;
 	height: 32px;
+	display: inline-block;
 }
 
 .gamecontainer
