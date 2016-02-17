@@ -41,9 +41,8 @@ body
 .gamecontainer
 {
 	text-align: center;
-	width: 1216px;
 	margin: 0 auto;
-	padding 8px;
+	padding: 4px;
 	display: block;
 }
 
