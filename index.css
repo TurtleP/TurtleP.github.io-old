@@ -65,7 +65,6 @@ body
 	border-radius: 6px;
 	display: inline-block;
 	width: 800px;
-	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 }
