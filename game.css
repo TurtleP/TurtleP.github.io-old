@@ -21,6 +21,8 @@ body
 	color: white;
 	background: #000000;
 	font-size: 16pt;
+	width: 100%;
+	display: block;
 }
 
 .head
