@@ -21,26 +21,72 @@ a
 	font-weight:400;
 }
 
-a:hover 
-{ 
-	color: #686868;
+ul
+{
+	list-style-type: none;
 }
 
 .topbar
 {
-	text-align:center;
-	background: #000000;
-	font-size: 16pt;
+	text-align: center;
+	background: #1e3e3e;
+	font-size: 12pt;
 	width: 100%;
 	position: absolute;
 	left:0;top:0;
+	height: 48px;
+	font-family: 'Open Sans', sans-serif;
 }
 
-.topbar > a
+.topbar li
+{
+	display: inline;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+.topbar li:before
+{
+	content: "|";
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+.topbar li:first-child:before
+{
+	content: "";
+}
+
+.topbar a
 {
 	text-decoration: none;
+	padding: 0 auto;
+	margin: 0 auto;
+	transition-duration: 0.3s;
+	color: #FFFFFF;
 }
 
+.topbar a:hover
+{
+	color: #9E9E9E;
+}
+
+.icon
+{
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 0 auto;
+	margin-bottom: 0 auto;
+	width: 16px;
+	height: 16px;
+}
+
+/* Other stuff */
+
+a:hover 
+{ 
+	color: #686868;
+}
 
 .wrapper
 {
@@ -53,6 +99,7 @@ a:hover
 	font-weight:600;
 	font-size:48pt;
 	text-align:center;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .status
@@ -62,6 +109,7 @@ a:hover
 	margin-bottom: 72px;
 	text-align:center;
 	margin-top: 10px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .metacontainer
@@ -91,13 +139,6 @@ a:hover
 	position:absolute;
 	width: 50%;
 	right:0;
-}
-
-.icon
-{
-	margin: 8px 8px 0 8px;
-	width: 40px;
-	height: 40px;
 }
 
 /* Game page */
