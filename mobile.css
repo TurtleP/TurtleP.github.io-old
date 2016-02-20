@@ -58,7 +58,7 @@ ul
 	width: 48px;
 }
 
-.topbar a: hover
+.topbar a:hover
 {
 	color: transparent;
 }
@@ -75,7 +75,7 @@ ul
 
 /* Other stuff */
 
-a: hover 
+a:hover 
 { 
 	color: #686868;
 }

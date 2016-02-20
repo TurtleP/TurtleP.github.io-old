@@ -24,6 +24,7 @@ a
 ul
 {
 	list-style-type: none;
+	padding:0;
 }
 
 .topbar
@@ -45,14 +46,14 @@ ul
 	margin: 0 auto;
 }
 
-.topbar li: before
+.topbar li:before
 {
 	content: "|";
 	padding: 0 auto;
 	margin: 0 auto;
 }
 
-.topbar li: first-child: before
+.topbar li:first-child:before
 {
 	content: "";
 }
@@ -66,7 +67,7 @@ ul
 	color: #FFFFFF;
 }
 
-.topbar a: hover
+.topbar a:hover
 {
 	color: #9E9E9E;
 }
@@ -83,7 +84,7 @@ ul
 
 /* Other stuff */
 
-a: hover 
+a:hover 
 { 
 	color: #686868;
 }
