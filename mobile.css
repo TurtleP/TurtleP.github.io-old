@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+
+body
+{
+    font-family:'Open Sans';
+    color: #FFFFFF;
+    background-color: #2f4f4f;
+    margin-top: 96px;
+}
+
+p
+{
+    font-size:8pt;
+    text-indent: 20px;
+}
+
+a 
+{ 
+    text-decoration: underline; 
+    color: #FFFFFF;
+    font-weight:400;
+}
+
+ul
+{
+    list-style-type: none;
+    padding:0;
+}
+
+.topbar
+{
+    text-align: center;
+    background: #1e3e3e;
+    font-size: 10pt;
+    width: 100%;
+    position: absolute;
+    left:0;top:0;
+    height: 48px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topbar li
+{
+    display: inline;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.topbar a
+{
+    text-decoration: none;
+    padding: 0 auto;
+    margin: 0 auto;
+    transition-duration: 0.3s;
+    color:transparent;
+    overflow:hidden;
+    display: inline-block;
+    width:48px;
+}
+
+.topbar a:hover
+{
+    color: transparent;
+}
+
+.icon
+{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    width: 24px;
+    height: 24px;
+}
+
+/* Other stuff */
+
+a:hover 
+{ 
+    color: #686868;
+}
+
+.wrapper
+{
+    width:100%;
+    margin:0 auto;
+}
+
+.head
+{
+    font-weight:600;
+    font-size:24pt;
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.status
+{
+    font-weight:300;
+    font-size:8pt;
+    margin-bottom: 72px;
+    text-align:center;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.metacontainer
+{
+    text-align: center;
+    position: relative;
+}
+
+.aboutcontainer
+{
+    font-weight:300;
+    text-align: center;
+    margin:0 auto;
+    width: 90%;
+}
+
+.twittercontainer
+{
+    margin:0 auto;
+    width: 90%;
+}
+
+/* Game page */
+
+.gamecontainer
+{
+    text-align: center;
+}
+
+.game
+{
+    background: #263F3F;
+    margin: 0 auto;
+    margin-bottom:10px;
+    border-radius: 6px;
+    width: 90%;
+    height: 112px;
+    display: block;
+    position:relative;
+    padding: 8px;
+}
+
+.gametitle
+{
+    font-weight: 300;
+    font-size: 12pt;
+    margin: 0px;
+    padding: 0px;
+    text-align:center;
+}
+
+.gamedescription
+{
+    font-weight: 300;
+    font-size: 8pt;
+    height:96px;
+    text-align:center;
+}
+
+.downloadicon
+{
+    text-align: center;
+    margin:4px 4px 0 4px;
+    width: 24px;
+    height: 24px;
+    display:inline-block;
+}
+
+.gameicon
+{
+    border-radius: 6px;
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    line-height: 128px;
+}
+
+.windows
+{
+    background: url(download/windows.png) no-repeat center;
+    background-size:24px 24px;
+}
+
+.osx
+{
+    background: url(download/mac.png) no-repeat center;
+    background-size:24px 24px;
+}
+
+.source
+{
+    background: url(download/source.png) no-repeat center;
+    background-size:24px 24px;
+}
+
+.play
+{
+    background: url(download/googleplay.png) no-repeat center;
+    background-size:24px 24px;
+}
+
+.threeds
+{
+    background: url(download/3ds.png) no-repeat center;
+    background-size:24px 24px;
+}
+
+#icon-turtleinvaders{
+    background:url(games/turtleinvaders.png) no-repeat center;
+    background-size:100px 100px;
+}
+
+#icon-idiot{
+    background:url(games/idiot.png) no-repeat center;
+}
+
+#icon-pegs{
+    background:url(games/pegs.png) no-repeat center;
+}
+
+#icon-hax0r{
+    background:url(games/hax0r.png) no-repeat center;
+}
+
+#icon-antibounce{
+    background:url(games/antibounce.png) no-repeat center;
+}
+
+#icon-spacefruit{
+    background:url(games/spacefruit.png) no-repeat center;
+}
+
+.gamewrapper{
+    width:67%;
+    position:absolute;
+    right:0;
+}
+.iconwrapper{
+    width:33%;
+    position:absolute;
+    left:0;
+    top: 10%;
+}
+.download{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
