@@ -29,7 +29,6 @@ p
 	position: absolute;
 	left: 0;top: 0;
 	height: 48px;
-	line-height: 48px;
 }
 
 .topbar a
@@ -42,9 +41,6 @@ p
 	overflow: hidden;
 	display: inline-block;
 	width: 48px;
-
-	border-right: 1px solid rgba(255, 255, 255, 0.2);
-	outline-width: 0px;
 }
 
 .topbar a:hover
