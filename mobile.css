@@ -41,6 +41,7 @@ p
 	overflow: hidden;
 	display: inline-block;
 	width: 48px;
+	line-height: 48px;
 }
 
 .topbar a:hover
