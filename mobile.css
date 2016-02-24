@@ -88,7 +88,7 @@ a:hover
 .status
 {
 	font-weight: 300;
-	font-size: 9pt;
+	font-size: 12pt;
 	margin-bottom: 72px;
 	text-align: center;
 	margin-top: 10px;
@@ -103,6 +103,7 @@ a:hover
 .aboutcontainer
 {
 	font-weight: 300;
+	font-size: 14pt;
 	text-align: justify;
 	margin: 0 auto;
 	width: 90%;
