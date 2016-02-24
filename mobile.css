@@ -1,8 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700);
+
+html 
+{ 
+	margin: 0px; 
+	padding: 0px;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif !important;
+}
 
 body
 {
-	font-family: 'Open Sans';
 	color: #FFFFFF;
 	background-color: #2f4f4f;
 	margin-top: 96px;
@@ -14,19 +20,6 @@ p
 	text-indent: 20px;
 }
 
-a 
-{ 
-	text-decoration: underline; 
-	color: #FFFFFF;
-	font-weight: 400;
-}
-
-ul
-{
-	list-style-type: none;
-	padding: 0;
-}
-
 .topbar
 {
 	text-align: center;
@@ -36,26 +29,22 @@ ul
 	position: absolute;
 	left: 0;top: 0;
 	height: 48px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.topbar li
-{
-	display: inline;
-	padding: 0 auto;
-	margin: 0 auto;
+	line-height: 48px;
 }
 
 .topbar a
 {
 	text-decoration: none;
-	padding: 0 auto;
+	padding-right: 8px;
 	margin: 0 auto;
 	transition-duration: 0.3s;
 	color: transparent;
 	overflow: hidden;
 	display: inline-block;
 	width: 48px;
+
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	outline-width: 0px;
 }
 
 .topbar a:hover
@@ -75,9 +64,17 @@ ul
 
 /* Other stuff */
 
+a 
+{ 
+	text-decoration: none; 
+	color: #FFFFFF;
+	font-weight: 400;
+	transition-duration: 0.3s;
+}
+
 a:hover 
 { 
-	color: #686868;
+	text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
 }
 
 .wrapper
@@ -91,17 +88,15 @@ a:hover
 	font-weight: 600;
 	font-size: 24pt;
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
 }
 
 .status
 {
 	font-weight: 300;
-	font-size: 8pt;
+	font-size: 9pt;
 	margin-bottom: 72px;
 	text-align: center;
 	margin-top: 10px;
-	font-family: 'Open Sans', sans-serif;
 }
 
 .metacontainer
@@ -113,7 +108,7 @@ a:hover
 .aboutcontainer
 {
 	font-weight: 300;
-	text-align: center;
+	text-align: justify;
 	margin: 0 auto;
 	width: 90%;
 }
@@ -159,6 +154,13 @@ a:hover
 	font-size: 8pt;
 	height: 96px;
 	text-align: center;
+}
+
+.download
+{
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .downloadicon
