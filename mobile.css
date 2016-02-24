@@ -50,12 +50,10 @@ p
 
 .icon
 {
-	margin-left: 8px;
-	margin-right: 8px;
-	margin-top: 0 auto;
-	margin-bottom: 0 auto;
+	margin: 0 auto;
 	width: 24px;
 	height: 24px;
+	line-height: 48px
 }
 
 /* Other stuff */
