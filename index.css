@@ -97,8 +97,10 @@ a:hover
 
 .metacontainer
 {
-	position: relative;
+	width: 800px;
+	margin:0 auto;
 	text-align: center;
+	position: relative;
 }
 
 .aboutcontainer
@@ -107,7 +109,7 @@ a:hover
 	text-align: justify;
 	display: inline-block;
 	position: relative;
-	width: 800px;
+	
 }
 
 /* Game page */
