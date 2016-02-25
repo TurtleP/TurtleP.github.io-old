@@ -26,9 +26,10 @@ p
 	background: #1e3e3e;
 	font-size: 10pt;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	left: 0;top: 0;
 	height: 48px;
+	line-height: 48px;
 }
 
 .topbar a
