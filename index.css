@@ -109,7 +109,26 @@ a:hover
 	text-align: justify;
 	display: inline-block;
 	position: relative;
-	
+}
+
+/* Social page */
+.mediacontainer
+{
+	text-align: center;
+}
+
+.socialmedia
+{
+	width: 96px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.mediaicon
+{
+	height: 80px;
+	line-height: 80px;
 }
 
 /* Game page */
