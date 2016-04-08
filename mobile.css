@@ -24,7 +24,7 @@ p
 {
 	text-align: center;
 	background: #1e3e3e;
-	font-size: 10pt;
+	font-size: 25pt;
 	width: 100%;
 	position: fixed;
 	left: 0;top: 0;
@@ -38,18 +38,11 @@ p
 	padding-right: 8px;
 	margin: 0 auto;
 	transition-duration: 0.3s;
-	color: transparent;
 	overflow: hidden;
 	display: inline-block;
-	width: 40px;
+	width: 48px;
 	height: 48px;
-	line-height: 64px;
-}
-
-.topbar a:hover
-{
-	color: transparent;
-	text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+	line-height: 48px;
 }
 
 .icon
@@ -70,7 +63,7 @@ a
 	transition-duration: 0.3s;
 }
 
-a:hover 
+a:hover
 { 
 	text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
 }
@@ -250,7 +243,6 @@ a:hover
 .iconwrapper
 {
 	width: 33%;
-	position: absolute;
 	left: 0;
 	top: 10%;
 }
@@ -261,4 +253,23 @@ a:hover
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, 0);
+}
+
+.mediacontainer
+{
+	text-align: center;
+}
+
+.socialmedia
+{
+	width: 96px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.mediaicon
+{
+	height: 80px;
+	line-height: 80px;
 }
