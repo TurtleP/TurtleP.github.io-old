@@ -16,7 +16,7 @@ body
 
 p
 {
-	font-size: 8pt;
+	font-size: 12pt;
 	text-indent: 20px;
 }
 
@@ -30,6 +30,8 @@ p
 	left: 0;top: 0;
 	height: 48px;
 	line-height: 48px;
+	z-index:50;
+	overflow:auto;
 }
 
 .topbar a
@@ -55,7 +57,7 @@ p
 
 /* Other stuff */
 
-a 
+a,.ds
 { 
 	text-decoration: none; 
 	color: #FFFFFF;
@@ -63,9 +65,13 @@ a
 	transition-duration: 0.3s;
 }
 
-a:hover
+a:hover,a:focus
 { 
 	text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+}
+.ds:hover
+{
+	box-shadow:0px 0px 4px rgba(255, 255, 255, 0.5);
 }
 
 .wrapper
@@ -85,21 +91,11 @@ a:hover
 {
 	font-weight: 300;
 	font-size: 12pt;
-	margin-bottom: 72px;
 	text-align: center;
-	margin-top: 10px;
 }
-
-.metacontainer
-{
-	text-align: center;
-	position: relative;
-}
-
 .aboutcontainer
 {
 	font-weight: 300;
-	font-size: 14pt;
 	text-align: justify;
 	margin: 0 auto;
 	width: 90%;
@@ -115,161 +111,136 @@ a:hover
 
 .gamecontainer
 {
-	text-align: center;
+	position:relative;
+	text-align:center;
+	width: 95%;
+	height: 200px;
+	display: block;
+	margin: 0 auto 40px auto;
+	border-radius: 10px;
 }
 
-.game
+.gamebg
 {
-	background: #263F3F;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	border-radius: 6px;
-	width: 90%;
-	height: 112px;
-	display: block;
-	position: relative;
-	padding: 8px;
+	border-radius: 10px;
+	width:100%;
+	height:200px;
+	opacity:0.15;
+	box-shadow: inset -9px 0px 5px -7px rgba(38,63,63,1);
 }
 
 .gametitle
 {
-	font-weight: 300;
-	font-size: 12pt;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
+	margin:0 auto;
+	top:0;
+	left:0;right:0;
+	position:absolute;
+	font-weight: 400;
+	font-size: 15pt;
+	margin-top:10px;
+	padding:0px;
+	text-shadow:0px 0px 3px rgba(0,0,0,0.5);
 }
 
 .gamedescription
 {
-	font-weight: 300;
-	font-size: 8pt;
-	height: 96px;
-	text-align: center;
+	position:absolute;
+	top:0;bottom:0;left:0;right:0;
+	margin:40px auto 0 auto;
+	height: 50%;
+	width: 90%;
+	font-size:10pt;
+	overflow:auto;
 }
 
 .download
 {
-	text-align: center;
-	margin: 0 auto;
-	width: 100%;
+	position:absolute;
+	bottom:0;left:0;right:0;
+	margin: 0 auto 15px auto;
 }
 
-.downloadicon
+.download > a
 {
-	text-align: center;
-	margin: 4px 4px 0 4px;
-	width: 24px;
-	height: 24px;
-	display: inline-block;
+	margin:10px;
 }
 
-.gameicon
+#turtleinvaders
 {
-	border-radius: 6px;
-	width: 100px;
-	height: 100px;
-	margin: 0 auto;
-	line-height: 128px;
+	background-image:url('images/games/turtle-invaders.png');
+    background-size:cover;
+    background-position:center center;
 }
 
-.windows
+#idiot
 {
-	background: url(download/windows.png) no-repeat center;
-	background-size: 24px 24px;
+	background-image:url('images/games/idiot.png');
+    background-size:cover;
+    background-position:bottom center;
 }
 
-.osx
+#pegs
 {
-	background: url(download/mac.png) no-repeat center;
-	background-size: 24px 24px;
+	background-image:url('images/games/pegs.png');
+    background-size: cover;
+    background-position:center center;
 }
 
-.source
+#hax0r
 {
-	background: url(download/source.png) no-repeat center;
-	background-size: 24px 24px;
+	background-image:url('images/games/hax0r.png');
+    background-size: cover;
+    background-position:center center;
 }
 
-.play
+#antibounce
 {
-	background: url(download/googleplay.png) no-repeat center;
-	background-size: 24px 24px;
+	background-image:url('images/games/antibounce.png');
+    background-size: cover;
+    background-position:bottom center;
 }
 
-.threeds
+#spacefruit
 {
-	background: url(download/3ds.png) no-repeat center;
-	background-size: 24px 24px;
+	background-image:url('images/games/spacefruit.png');
+    background-size: cover;
+    background-position:center center;
 }
-
-#icon-turtleinvaders
-{
-	background: url(games/turtleinvaders.png) no-repeat center;
-	background-size: 100px 100px;
-}
-
-#icon-idiot
-{
-	background: url(games/idiot.png) no-repeat center;
-}
-
-#icon-pegs
-{
-	background: url(games/pegs.png) no-repeat center;
-}
-
-#icon-hax0r
-{
-	background: url(games/hax0r.png) no-repeat center;
-}
-
-#icon-antibounce
-{
-	background: url(games/antibounce.png) no-repeat center;
-}
-
-#icon-spacefruit
-{
-	background: url(games/spacefruit.png) no-repeat center;
-}
-
 .gamewrapper
 {
-	width: 67%;
-	position: absolute;
-	right: 0;
-}
-.iconwrapper
-{
-	width: 33%;
-	left: 0;
-	top: 10%;
-}
-.download
-{
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
+	margin:15px auto;
 }
 
 .mediacontainer
 {
-	text-align: center;
+	margin:0 auto;
+	max-width:250px;
+	text-align:center;
 }
 
 .socialmedia
 {
-	width: 96px;
-	display: inline-block;
-	margin-left: 20px;
-	margin-right: 20px;
+	padding:10px;
+	width:96px;
+	display: inline-block !important;
 }
 
-.mediaicon
+.comingsoon
 {
-	height: 80px;
-	line-height: 80px;
+	display:none;
+}
+a:hover .comingsoon
+{
+	width:100%;
+	height:30px;
+	background-color:#e74c3c;
+	position:fixed;
+	z-index:100;
+	display:block;
+	bottom:0;
+	left:0;
+	line-height:30px;
+	font-size:14pt;
+	text-shadow:none;
+	opacity:0.9;
 }

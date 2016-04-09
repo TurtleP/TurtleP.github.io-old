@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700);
+@keyframes fadeIn { from { opacity:0; } to { opacity:0.9; } }
 
 html 
 { 
@@ -30,6 +31,7 @@ p
 	left: 0;top: 0;
 	height: 48px;
 	line-height: 48px;
+	z-index:50;
 }
 
 .topbar a
@@ -41,11 +43,6 @@ p
 	color: #FFFFFF;
 	border-right: 1px solid rgba(255, 255, 255, 0.2);
 	outline-width: 0px;
-}
-
-.topbar a:hover
-{
-	outline-width: 2px;
 }
 
 .icon
@@ -60,17 +57,21 @@ p
 
 /* Other stuff */
 
-a 
+a,.ds
 { 
 	text-decoration: none; 
 	color: #FFFFFF;
 	font-weight: 400;
-	transition-duration: 0.3s;
+	transition-duration: 0.2s;
 }
 
-a:hover 
+a:hover,a:focus
 { 
 	text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+}
+.ds:hover
+{
+	box-shadow:0px 0px 4px rgba(255, 255, 255, 0.5);
 }
 
 .wrapper
@@ -135,44 +136,55 @@ a:hover
 
 .gamecontainer
 {
-	text-align: center;
+	position:relative;
+	text-align:center;
+	width: 750px;
+	height: 300px;
+	display: block;
+	margin: 0 auto 40px auto;
+	border-radius: 10px;
 }
 
-.game
+.gamebg
 {
-	background: #263F3F;
-	margin: 0 auto;
-	padding: 8px;
-	margin: 15px;
-	border-radius: 6px;
-	width: 480px;
-	height: 128px;
-	display: inline-block;
+	border-radius: 10px;
+	width:750px;
+	height:300px;
+	opacity:0.15;
+	box-shadow: inset -9px 0px 5px -7px rgba(38,63,63,1);
 }
 
 .gametitle
 {
-	font-weight: 300;
-	font-size: 20pt;
-	margin: 0px;
-	padding: 0px;
+	margin:0 auto;
+	top:0;
+	left:0;right:0;
+	position:absolute;
+	font-weight: 400;
+	font-size: 25pt;
+	margin-top:10px;
+	padding:0px;
+	text-shadow:0px 0px 3px rgba(0,0,0,0.5);
 }
 
 .gamedescription
 {
-	font-weight: 300;
-	font-size: 12pt;
-	height: 96px;
-	width: 350px;
-	float: right;
-	text-align: center;
+	position:absolute;
+	top:0;bottom:0;left:0;right:0;
+	margin:auto;
+	height: 50%;
+	width: 75%;
 }
 
 .download
 {
-	text-align: center;
-	margin: 0 auto;
-	width: 100%;
+	position:absolute;
+	bottom:0;left:0;right:0;
+	margin: 0 auto 15px auto;
+}
+.download > a
+{
+	margin:10px;
 }
 
 .downloadicon
@@ -191,57 +203,63 @@ a:hover
 	float: left;
 }
 
-.windows
+#turtleinvaders
 {
-	background: url(download/windows.png) no-repeat center;
+	background-image:url('images/games/turtle-invaders.png');
+    background-size:cover;
+    background-position:center center;
 }
 
-.osx
+#idiot
 {
-	background: url(download/mac.png) no-repeat center;
+	background-image:url('images/games/idiot.png');
+    background-size:cover;
+    background-position:bottom center;
 }
 
-.source
+#pegs
 {
-	background: url(download/source.png) no-repeat center;
+	background-image:url('images/games/pegs.png');
+    background-size: cover;
+    background-position:center center;
 }
 
-.play
+#hax0r
 {
-	background: url(download/googleplay.png) no-repeat center;
+	background-image:url('images/games/hax0r.png');
+    background-size: cover;
+    background-position:center center;
 }
 
-.threeds
+#antibounce
 {
-	background: url(download/3ds.png) no-repeat center;
+	background-image:url('images/games/antibounce.png');
+    background-size: cover;
+    background-position:bottom center;
 }
 
-#icon-turtleinvaders
+#spacefruit
 {
-	background: url(games/turtleinvaders.png) no-repeat center;
+	background-image:url('images/games/spacefruit.png');
+    background-size: cover;
+    background-position:center center;
 }
-
-#icon-idiot
+.comingsoon
 {
-	background: url(games/idiot.png) no-repeat center;
+	display:none;
 }
-
-#icon-pegs
+a:hover .comingsoon
 {
-	background: url(games/pegs.png) no-repeat center;
-}
-
-#icon-hax0r
-{
-	background: url(games/hax0r.png) no-repeat center;
-}
-
-#icon-antibounce
-{
-	background: url(games/antibounce.png) no-repeat center;
-}
-
-#icon-spacefruit
-{
-	background: url(games/spacefruit.png) no-repeat center;
+	width:100%;
+	height:30px;
+	background-color:#e74c3c;
+	position:fixed;
+	z-index:100;
+	display:block;
+	bottom:0;
+	left:0;
+	line-height:30px;
+	font-size:14pt;
+	text-shadow:none;
+	opacity:0.9;
 }
