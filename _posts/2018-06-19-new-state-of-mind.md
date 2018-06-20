@@ -1,6 +1,7 @@
 ---
 layout: post
-title: First post!
+title: New State Of Mind
+subtitle: Surviving in Maryland
 ---
 
 I figured I'd post about this since it's something that's rather important to me. I got a job back in November. They asked if I was alright with relocation, and I was. I still am. That's the point of this post: I'm now in a different state. I previously lived in New jersey, a place that's 300 miles from me now. I'm far away from my parents, and closer to one of my siblings.
