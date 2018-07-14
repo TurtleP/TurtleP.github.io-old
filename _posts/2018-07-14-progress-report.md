@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Progress Report
 date: '2018-07-14'
 ---
