@@ -1,7 +1,7 @@
 - **Main**
 - [Home](/)
 - [Building Löve Potion](building)
-- [Compatability](compatability)
+- [Compatibility](compatability)
 - [Game Distribution](packaging)
 - **Other**
 - [FAQ](faq)
