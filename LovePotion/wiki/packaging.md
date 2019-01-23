@@ -8,7 +8,7 @@ Follow the instructions for [setting up a development environment](building?id=g
 
 ?> Regardless of the method used, please use Atmosphère's title takeover functionality. This allows for your game to use all the system memory allowed along with the Software Keyboard.
 
-### Forward
+### Foreword
 
 When you run Löve Potion by itself, it will first try to locate a game within its own *RomFS*, a read-only filesystem. If you did not build your game with the [template](https://github.com/TurtleP/LovePotion-examples/tree/master/templates/switch) for standalone usage (useful for custom metadata), it will default to using the 'Game Folder'. If it fails to locate that, it will show the 'No Game' screen.
 
