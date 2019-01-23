@@ -17,3 +17,8 @@ To write your own Visual Novels I recommend to download the demo-game and edit n
 The Literature Club is full of cute girls! Will you write the way into their heart? This game is not suitable for children or those who are easily disturbed.
 
 ![](/showcase/ddlc-love.png)
+
+## Mamono Sweeper Switch
+#### by Maurice
+
+[Mamono Sweeper Switch](https://github.com/Stabyourself/mamono-sweeper-switch) is a homebrew port of the game [Mamono Sweeper](http://www.hojamaka.com/game/mamono_sweeper_h/html5/en.html).
