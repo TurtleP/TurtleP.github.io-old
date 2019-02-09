@@ -19,7 +19,7 @@ sudo (dkp-)pacman -Syu
 ```
 and then
 ```bash
-sudo (dkp-)pacman -S switch-dev devkit-env
+sudo (dkp-)pacman -S switch-dev 3ds-dev devkit-env
 ```
 
 <!-- tabs:end -->
@@ -32,12 +32,12 @@ Install the required portlibs:
 
 #### **Windows (msys2)**
 ```bash
-pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl
+pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng
 ```
 
 #### **Unix-like (Linux, macOS)**
 ```bash
-sudo (dkp-pacman) -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl
+sudo (dkp-)pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng
 ```
 <!-- tabs:end -->
 

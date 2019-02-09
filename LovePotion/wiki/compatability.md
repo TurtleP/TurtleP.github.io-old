@@ -2,8 +2,15 @@
 
 ## Trello Board
 
-It would be rather tedious for me to list out everything that *is* compatable, but also ***horrible*** for anything that's just specific for Löve Potion. However, I made a [Trello Board](https://trello.com/b/T1FlF1sY/l%C3%B6ve-potion) from the start of making Löve Potion to show everything currently implemented and also upcoming features. It's not a roadmap.
+It would be rather tedious for me to list out everything that *is* compatable, but also ***horrible*** for anything that's just specific for Löve Potion. However, I made a [Trello Board](https://trello.com/b/T1FlF1sY/l%C3%B6ve-potion) from the start of making Löve Potion to show everything currently implemented and also upcoming features. It's not a roadmap. Please keep in mind this Trello Board only reflects the Nintendo Switch version. However, the main difference is a larger lack of some graphics functions on 3DS.
 
+## 3DS functions
+
+?> Custom fonts are loaded in via a *.bcfnt file. Do not use a *.ttf. A tool for converting *.ttf files to this new format will be provided in the future by devkitPro.
+
+- `love.graphics.set3D(enable)` enable or disable 3D with `true` or `false`
+- `love.graphics.setDepth(depth)` set the 3D depth
+- `love.graphics.setScreen(screen)` set the screen to render to: `"top"` or `"bottom"`
 
 ## System Functions
 
@@ -15,7 +22,7 @@ It would be rather tedious for me to list out everything that *is* compatable, b
 
 ## Gamepad Constants
 
-?> Löve Potion only uses the `love.gamepad*` callbacks for input handling (with the joycon).
+?> Löve Potion only uses the `love.gamepad*` callbacks for input handling (with the joycon or the 3DS system itself).
 
 ### Face Buttons
 
@@ -46,7 +53,16 @@ It would be rather tedious for me to list out everything that *is* compatable, b
 
 ### Special Buttons
 
+#### Nintendo Switch
+
 |Button|Description   |
 |------|--------------|
 |plus  | The + button |
 |minus | The - button |
+
+#### Nintendo 3DS
+
+|Button|Description        |
+|------|-------------------|
+|start |The 'start' button |
+|select|The 'select' button|

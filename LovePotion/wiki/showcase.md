@@ -1,5 +1,7 @@
 ?> Want your game or library featured here? Message me on the Discord server!
 
+# Nintendo Switch
+
 ## LoveStory
 #### by **Shrike**
 
@@ -22,3 +24,9 @@ The Literature Club is full of cute girls! Will you write the way into their hea
 #### by Maurice
 
 [Mamono Sweeper Switch](https://github.com/Stabyourself/mamono-sweeper-switch) is a homebrew port of the game [Mamono Sweeper](http://www.hojamaka.com/game/mamono_sweeper_h/html5/en.html).
+
+![](/showcase/mamono-sweeper-switch.png)
+
+# Nintendo 3DS
+
+Nothing here yet!
