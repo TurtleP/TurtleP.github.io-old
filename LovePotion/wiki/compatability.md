@@ -8,6 +8,15 @@ It would be rather tedious for me to list out everything that *is* compatable, b
 
 ?> Custom fonts are loaded in via a *.bcfnt file. Do not use a *.ttf. A tool for converting *.ttf files to this new format will be provided in the future by devkitPro.
 
+- `love.graphics.newFont(path, size)` will take the path to a *.bcfnt file, and `size` for the scale. Alternatively, one can load a system font using the follwing names in place of the path parameter:
+
+|Name|Notes|
+|----|-----------|
+|standard|JPN, USA, EUR, and AUS regions font|
+|chinese|Chinese font|
+|korean|Korean font|
+|taiwanese|Taiwanese font|
+
 - `love.graphics.set3D(enable)` enable or disable 3D with `true` or `false`
 - `love.graphics.setDepth(depth)` set the 3D depth
 - `love.graphics.setScreen(screen)` set the screen to render to: `"top"` or `"bottom"`
