@@ -32,12 +32,12 @@ Install the required portlibs:
 
 #### **Windows (msys2)**
 ```bash
-pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng
+pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng
 ```
 
 #### **Unix-like (Linux, macOS)**
 ```bash
-sudo (dkp-)pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng
+sudo (dkp-)pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng
 ```
 <!-- tabs:end -->
 
