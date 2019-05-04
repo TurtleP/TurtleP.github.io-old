@@ -16,7 +16,7 @@ Make sure you keep your Löve Potion projects in an easy-to-remember directory. 
 
 ### Environment Setup
 
-Mentioned before, go to the [examples repo for the template](https://github.com/TurtleP/LovePotion-examples/tree/master/templates). Next, download [the environment setup](/files/.lovepotion.zip ':ignore') and unzip it to your **_home_** directory. This is typically under the directory known as `~`. Once complete, run `~/.lovepotion/scripts/setup.sh`. This file will append the two environment variables you need to your `.bashrc` file. After that is completed, grab the [latest *.elf binary](https://github.com/TurtleP/LovePotion/releases) and place it under your home directory inside the `.lovepotion` folder. Each elf file must be named specifically.
+Mentioned before, go to the [examples repo for the template](https://github.com/TurtleP/LovePotion-examples/tree/master/templates). Next, download [the environment setup](/LovePotion/wiki/files/.lovepotion.zip ':ignore') and unzip it to your **_home_** directory. This is typically under the directory known as `~`. Once complete, run `~/.lovepotion/scripts/setup.sh`. This file will append the two environment variables you need to your `.bashrc` file. After that is completed, grab the [latest *.elf binary](https://github.com/TurtleP/LovePotion/releases) and place it under your home directory inside the `.lovepotion` folder. Each elf file must be named specifically.
 If using the 3DS version, name the elf file `3ds.elf`, and for Switch, `switch.elf`
 
 ### Löve Potion Executable
@@ -29,7 +29,7 @@ Creating your {game}.lpx file is extremely simple. Open your terminal and naviga
 build_romfs SuperGame SuperGame.lpx
 ```
 
-This will package the content of *SuperGame* inside its own lpx file. Having built that, [download the file association zip](/files/config.zip ':ignore'). Copy the `lovepotion.cfg` file to your Switch [µSD card](https://simple.wikipedia.org/wiki/MicroSD) under `/nx-hbmenu/config/fileassoc`. The `LovePotion` folder can be placed under `/switch`. The only thing missing is the latest copy of Löve Potion, so download the [latest *.nro binary](https://github.com/TurtleP/LovePotion/releases) and place it in the `LovePotion` folder.
+This will package the content of *SuperGame* inside its own lpx file. Having built that, [download the file association zip](/LovePotion/wiki/files/config.zip ':ignore'). Copy the `lovepotion.cfg` file to your Switch [µSD card](https://simple.wikipedia.org/wiki/MicroSD) under `/nx-hbmenu/config/fileassoc`. The `LovePotion` folder can be placed under `/switch`. The only thing missing is the latest copy of Löve Potion, so download the [latest *.nro binary](https://github.com/TurtleP/LovePotion/releases) and place it in the `LovePotion` folder.
 
 All that's left is to copy the new *SuperGame.lpx* to the `/switch` folder on your µSD card and open the Homebrew Menu. It will now show up as an entry that you can run.
 
