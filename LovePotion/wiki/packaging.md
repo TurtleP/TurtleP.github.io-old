@@ -16,7 +16,7 @@ Make sure you keep your Löve Potion projects in an easy-to-remember directory. 
 
 ### Environment Setup
 
-Mentioned before, go to the [examples repo for the template](https://github.com/TurtleP/LovePotion-examples/tree/master/templates). Next, download [the environment setup](/LovePotion/wiki/files/.lovepotion.zip ':ignore') and unzip it to your **_home_** directory. This is typically under the directory known as `~`. Once complete, run `~/.lovepotion/scripts/setup.sh`. This file will append the two environment variables you need to your `.bashrc` file. After that is completed, grab the [latest *.elf binary](https://github.com/TurtleP/LovePotion/releases) and place it under your home directory inside the `.lovepotion` folder. Each elf file must be named specifically.
+Mentioned before, go to the [examples repo for the template](https://github.com/TurtleP/LovePotion-examples/tree/master/templates). Next, download [the environment setup](/LovePotion/wiki/files/lovepotion.zip ':ignore') and unzip it to your **_home_** directory. This is typically under the directory known as `~`. Once complete, run `~/.lovepotion/scripts/setup.sh`. This file will append the two environment variables you need to your `.bashrc` file. After that is completed, grab the [latest *.elf binary](https://github.com/TurtleP/LovePotion/releases) and place it under your home directory inside the `.lovepotion` folder. Each elf file must be named specifically.
 If using the 3DS version, name the elf file `3ds.elf`, and for Switch, `switch.elf`
 
 ### Löve Potion Executable
