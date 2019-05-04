@@ -17,11 +17,19 @@ pacman -Syu
 ```bash
 sudo (dkp-)pacman -Syu
 ```
-and then
+<!-- tabs:end -->
+
+Once the packages have syncronized, run the following:
+
+<!-- tabs:start -->
+#### **Windows (msys2)**
+```bash
+pacman -S switch-dev 3ds-dev
+```
+#### **Unix-like (Linux, macOS)**
 ```bash
 sudo (dkp-)pacman -S switch-dev 3ds-dev devkit-env
 ```
-
 <!-- tabs:end -->
 
 !> The following information is for development purposes only! Do not build Löve Potion directly if you don't understand programming or are not going to contribute. It only leads to [fragmentation](https://en.wikipedia.org/wiki/Market_fragmentation). If you wish to package your game for distribution, please see [Game Distribution](packaging)
@@ -32,12 +40,12 @@ Install the required portlibs:
 
 #### **Windows (msys2)**
 ```bash
-pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng
+pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng 3ds-curl
 ```
 
 #### **Unix-like (Linux, macOS)**
 ```bash
-sudo (dkp-)pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng
+sudo (dkp-)pacman -S switch-sdl2 switch-sdl2_mixer switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx switch-curl 3ds-sdl 3ds-sdl_mixer 3ds-libpng 3ds-curl
 ```
 <!-- tabs:end -->
 
