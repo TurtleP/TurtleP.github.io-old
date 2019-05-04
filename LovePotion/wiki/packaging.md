@@ -14,6 +14,11 @@ When you run Löve Potion by itself, it will first try to locate a game within i
 
 Make sure you keep your Löve Potion projects in an easy-to-remember directory. Do ***not*** put any of the Löve Potion data, your games ***or*** other binaries within the `devkitPro` folder. Keep it on your Desktop or even on cloud storage, like Dropbox.
 
+### Environment Setup
+
+Mentioned before, go to the [examples repo for the template](https://github.com/TurtleP/LovePotion-examples/tree/master/templates). Next, download [the environment setup](/files/lovepotion.zip) and unzip it to your **_home_** directory. This is typically under the directory known as `~`. Once complete, run `~/.lovepotion/scripts/setup.sh`. This file will append the two environment variables you need to your `.bashrc` file. After that is completed, grab the [latest *.elf binary](https://github.com/TurtleP/LovePotion/releases) and place it under your home directory inside the `.lovepotion` folder. Each elf file must be named specifically.
+If using the 3DS version, name the elf file `3ds.elf`, and for Switch, `switch.elf`
+
 ### Löve Potion Executable
 
 !> This method does not apply to the Nintendo 3DS version
@@ -28,23 +33,15 @@ This will package the content of *SuperGame* inside its own lpx file. Having bui
 
 All that's left is to copy the new *SuperGame.lpx* to the `/switch` folder on your µSD card and open the Homebrew Menu. It will now show up as an entry that you can run.
 
+?> Before using the following methods, please run [environment setup first!](packaging?id=environment-setup)
+
 ### Fused Game
 
-Mentioned before, go to the [examples repo for the template](https://github.com/TurtleP/LovePotion-examples/tree/master/templates). Next, download the [latest *.elf binary](https://github.com/TurtleP/LovePotion/releases) and place it with your projects. Let's say you put projects on the desktop, you would want it here: `Desktop/LovePotion/LovePotion.elf`. You'll want to add `LOVEPOTION_SWITCH` (or `LOVEPOTION_3DS`) under your `PATH` [on Windows](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/) and on Unix-like platforms (Linux/macOS), edit your `.bashrc` and paste:
-
-```bash
-# You may replace this path to where you keep your games
-export LOVEPOTION_SWITCH=$HOME/LovePotion/switch/LovePotion.elf
-export LOVEPOTION_3DS=$HOME/LovePotion/3ds/LovePotion.elf
-```
-
-Set the variables equal to the direct path (including the LovePotion.elf) of the binary.
-
-Now put your files inside a `game` directory in the template's directory and run `make`. Don't forget to change the `Title`, `Author`, and `Version` data inside the Makefile. You can also change the icon. 
+Put your files inside a `game` directory in the template's directory and run `make`. Don't forget to change the `Title`, `Author`, and `Version` data inside the Makefile. You can also change the icon. 
 
 For the switch version, be sure to remove the `progressive` flag when saving the new icon and the image must be exactly 256x256 pixels. On 3DS, this icon must be 48x48 and a *.png.
 
-Copy the newly build *SuperGame.nro* to the µSD card under `/switch` (or `/3ds`) and it will show up as an entry once you open the Homebrew Menu.
+Copy the newly built *SuperGame.(nro/3dsx)* to the µSD card under `/switch` (or `/3ds`) and it will show up as an entry once you open the Homebrew Menu.
 
 ### 'Game' Folder
 
